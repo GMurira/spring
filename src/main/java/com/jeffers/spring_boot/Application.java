@@ -13,6 +13,7 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+	//creating a new endpoint
 	@GetMapping("/hello")
 	public String helloWorld(){
 		return "Hello World spring boot";
