@@ -1,4 +1,4 @@
-package com.jeffers.spring_boot;
+package com.jeffers.spring_boot.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
