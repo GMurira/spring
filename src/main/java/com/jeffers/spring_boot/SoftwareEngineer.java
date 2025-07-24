@@ -1,11 +1,20 @@
 package com.jeffers.spring_boot;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 import java.util.Objects;
 
 /**
  * Model class
  */
+
+@Entity
 public class SoftwareEngineer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String techStack;
@@ -13,7 +22,7 @@ public class SoftwareEngineer {
     public SoftwareEngineer() {
     }
 
-    public SoftwareEngineer(String techStack, String name, Integer id) {
+    public SoftwareEngineer(Integer id, String techStack, String name) {
         this.techStack = techStack;
         this.name = name;
         this.id = id;
